@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuration Tool v2</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Configuration Tool</h1>
+    </header>
+    <div class="container">
+      <br id="line-break" />
+      <div id="svg-container">
+        <div id="valve-buttons" class="buttons">
+          <button id="rotate-button">Rotate</button>
+          <button id="clear-button">Clear</button>
+          <button id="switch-to-pump">Pump</button>
+        </div>
+        <div id="svg-valve">
+          <h1 id="num-field-one">0</h1>
+          <svg
+            class="svg-view"
+            viewbox="-30 -5 160 160"
+            preserveAspectRatio="xMinYMin meet"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Valve1">
+              <rect
+                width="100"
+                height="150"
+                fill="none"
+                stroke="black"
+                stroke-width="3px"
+              />
+              <circle
+                id="512"
+                class="port"
+                stroke-width="5px"
+                r="15"
+                cx="50"
+                cy="75"
+                fill="none"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="1"
+                class="port"
+                x1="50"
+                x2="50"
+                y1="5"
+                y2="45"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="2"
+                class="port"
+                x1="57"
+                x2="95"
+                y1="50"
+                y2="50"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="4"
+                class="port"
+                x1="57"
+                x2="95"
+                y1="75"
+                y2="75"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="8"
+                class="port"
+                x1="57"
+                x2="95"
+                y1="100"
+                y2="100"
+                stroke-width="5px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="16"
+                class="port"
+                x1="50"
+                x2="50"
+                y1="105"
+                y2="145"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="32"
+                class="port"
+                x1="5"
+                x2="43"
+                y1="100"
+                y2="100"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="64"
+                class="port"
+                x1="5"
+                x2="43"
+                y1="75"
+                y2="75"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="128"
+                class="port"
+                x1="6"
+                x2="43"
+                y1="50"
+                y2="50"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+              <line
+                id="256"
+                class="port"
+                x1="50"
+                x2="50"
+                y1="55"
+                y2="95"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+            </g>
+          </svg>
+        </div>
+        <div id="valve-2-buttons" class="buttons">
+          <button id="rotate-button">Rotate</button>
+          <button id="clear-button">Clear</button>
+          <button id="switch-to-pump">Pump</button>
+        </div>
+        <div id="svg-valve-2">
+          <h1 id="num-field-one">0</h1>
+          <svg
+            class="svg-view"
+            viewbox="-30 -5 160 160"
+            preserveAspectRatio="xMinYMin meet"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Valve1">
+              <rect
+                width="40"
+                height="80"
+                fill="none"
+                stroke="black"
+                stroke-width="3px"
+                x="30"
+                y="35"
+              />
+              <circle
+                id="512"
+                class="port"
+                stroke-width="5px"
+                r="15"
+                cx="50"
+                cy="75"
+                fill="none"
+                stroke="#d3d3d3"
+              />
+              <path
+                d="M 30 22 A 10 13 0 0 1 70 22 L 29 22"
+                stroke-width="2px"
+                stroke="black"
+                fill="transparent"
+              />
+
+              <line
+                id="256"
+                class="port"
+                x1="50"
+                x2="50"
+                y1="15"
+                y2="135"
+                stroke-width="6px"
+                stroke="#d3d3d3"
+              />
+            </g>
+          </svg>
+        </div>
+        <div id="svg-pump">
+          <h1 id="num-field-two">0</h1>
+          <svg
+            class="svg-view"
+            viewbox="-30 -5 160 160"
+            preserveAspectRatio="xMinYMin meet"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="pump" translate="" transform="">
+              <circle
+                id="pump-body"
+                stroke-width="3px"
+                r="50"
+                cx="50"
+                cy="75"
+                fill="none"
+                stroke="black"
+              />
+            </g>
+            <g id="right-arrow" key="4">
+              <path d="M 80 5 L 90 10 L 80 15 z" stroke="none" fill="black" />
+              <path
+                d="M 10 10 L 80 10"
+                stroke-width="4px"
+                stroke="black"
+                fill="transparent"
+              />
+            </g>
+            <g id="left-arrow" key="2">
+              <path d="M 20 5 L 10 10 L 20 15 z" stroke="none" fill="black" />
+              <path
+                d="M 90 10 L 20 10"
+                stroke-width="4px"
+                stroke="black"
+                fill="transparent"
+              />
+            </g>
+            <g id="pump-types">
+              <g id="Pump1" key="8">
+                <text x="17px" y="100px" font-size="500%">M</text>
+              </g>
+              <g id="Pump2" key="16">
+                <path
+                  d="M 50 25 A 20 25 0 0 1 50 75 A 20 25 0 0 0 50 125 M 0 75 A 25 20 0 0 1 50 75 A 25 20 0 0 0 100 75"
+                  stroke-width="2px"
+                  stroke="black"
+                  fill="transparent"
+                />
+              </g>
+              <g id="Pump3" key="32">
+                <circle
+                  stroke-width="2px"
+                  r="25"
+                  cx="25"
+                  cy="75"
+                  fill="none"
+                  stroke="black"
+                />
+                <circle
+                  stroke-width="2px"
+                  r="25"
+                  cx="75"
+                  cy="75"
+                  fill="none"
+                  stroke="black"
+                />
+              </g>
+              <g id="Pump4" key="64">
+                <circle
+                  id="pump-body"
+                  stroke-width="3px"
+                  r="35"
+                  cx="50"
+                  cy="75"
+                  fill="none"
+                  stroke="black"
+                />
+              </g>
+              <g id="Pump5" key="128">
+                <circle
+                  stroke-width="2px"
+                  r="25"
+                  cx="50"
+                  cy="50"
+                  fill="none"
+                  stroke="black"
+                />
+                <circle
+                  stroke-width="2px"
+                  r="25"
+                  cx="50"
+                  cy="100"
+                  fill="none"
+                  stroke="black"
+                />
+              </g>
+              <g id="Pump6" key="256">
+                <path
+                  d="M 10 45 L 100 70"
+                  stroke-width="2px"
+                  stroke="black"
+                  fill="transparent"
+                />
+                <path
+                  d="M 10 105 L 100 80"
+                  stroke-width="2px"
+                  stroke="black"
+                  fill="transparent"
+                />
+              </g>
+              <g id="base">
+                <path
+                  d="M 15 110 L 0 125 L 0 150 L 100 150 L 100 125 L 85 110"
+                  stroke-width="3px"
+                  stroke="black"
+                  fill="transparent"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div id="pump-buttons" class="buttons">
+          <select name="pumps" id="pumps"></select>
+          <button id="direction-button">Direction</button>
+          <button id="type-button">Type</button>
+          <button id="base-button">Base</button>
+          <button id="pump-clear-button">Clear</button>
+          <button id="switch-to-valve">Valve</button>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/utilitiesScript.js"></script>
+    <script src="./scripts/pumpScript.js"></script>
+    <script src="./scripts/valveScript.js"></script>
+  </body>
+</html>
